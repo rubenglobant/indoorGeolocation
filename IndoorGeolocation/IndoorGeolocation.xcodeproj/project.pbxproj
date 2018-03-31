@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3966E8A1C00253B5D9B16288 /* Pods_IndoorGeolocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5025A0B049158390AF4E767E /* Pods_IndoorGeolocation.framework */; };
 		8B0268B8206FD57400D8B154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0268B7206FD57400D8B154 /* AppDelegate.swift */; };
 		8B0268BA206FD57400D8B154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0268B9206FD57400D8B154 /* ViewController.swift */; };
 		8B0268BD206FD57400D8B154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0268BB206FD57400D8B154 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07C3A91AE9431AD83FFB9631 /* Pods-IndoorGeolocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorGeolocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorGeolocation/Pods-IndoorGeolocation.debug.xcconfig"; sourceTree = "<group>"; };
+		5025A0B049158390AF4E767E /* Pods_IndoorGeolocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndoorGeolocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		644C2C09C0B89EF26A31650E /* Pods-IndoorGeolocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorGeolocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorGeolocation/Pods-IndoorGeolocation.release.xcconfig"; sourceTree = "<group>"; };
 		8B0268B4206FD57400D8B154 /* IndoorGeolocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorGeolocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0268B7206FD57400D8B154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B0268B9206FD57400D8B154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3966E8A1C00253B5D9B16288 /* Pods_IndoorGeolocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C73317140D01C453A4A3C81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5025A0B049158390AF4E767E /* Pods_IndoorGeolocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EEDBB0BA9427A36B4534C55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07C3A91AE9431AD83FFB9631 /* Pods-IndoorGeolocation.debug.xcconfig */,
+				644C2C09C0B89EF26A31650E /* Pods-IndoorGeolocation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B0268AB206FD57400D8B154 = {
 			isa = PBXGroup;
 			children = (
 				8B0268B6206FD57400D8B154 /* IndoorGeolocation */,
 				8B0268B5206FD57400D8B154 /* Products */,
+				6EEDBB0BA9427A36B4534C55 /* Pods */,
+				3C73317140D01C453A4A3C81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B0268C9206FD57400D8B154 /* Build configuration list for PBXNativeTarget "IndoorGeolocation" */;
 			buildPhases = (
+				68ACC78DEE81C3E1E7E032FB /* [CP] Check Pods Manifest.lock */,
 				8B0268B0206FD57400D8B154 /* Sources */,
 				8B0268B1206FD57400D8B154 /* Frameworks */,
 				8B0268B2206FD57400D8B154 /* Resources */,
+				488D44289F3F295924794BA2 /* [CP] Embed Pods Frameworks */,
+				54A37DCA7350A6BD8773EA0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		488D44289F3F295924794BA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorGeolocation/Pods-IndoorGeolocation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54A37DCA7350A6BD8773EA0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorGeolocation/Pods-IndoorGeolocation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68ACC78DEE81C3E1E7E032FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndoorGeolocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B0268B0206FD57400D8B154 /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		8B0268CA206FD57400D8B154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C3A91AE9431AD83FFB9631 /* Pods-IndoorGeolocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +370,7 @@
 		};
 		8B0268CB206FD57400D8B154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 644C2C09C0B89EF26A31650E /* Pods-IndoorGeolocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
